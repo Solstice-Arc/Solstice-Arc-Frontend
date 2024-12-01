@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     const play = document.getElementById("PlayButton");
-    const deck = document.getElementById("Kart");
-    const shop = document.getElementById("market");
+    const deck = document.getElementById("DeckButton");
+    const shop = document.getElementById("MarketplaceButton");
     
     play.addEventListener("click", (e)=>{
         e.preventDefault();
-        alert("Ideally, this would lead to the matchmaking screen...")
+        window.location.href="./index.html"
     })  
     deck.addEventListener("click", (e)=>{
         e.preventDefault();
