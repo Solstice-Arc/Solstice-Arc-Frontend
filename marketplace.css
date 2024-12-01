@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url("file:///C:/Users/kyn/Downloads/premium_photo-1667761637876-e704c906927d.jpg"); /* Arka plan resmi */
+  background-image: url("./assets/backgroundSecondary.jpg"); /* Arka plan resmi */
   background-size: cover;
   background-repeat: repeat;
   background-position: center;

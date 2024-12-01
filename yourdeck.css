@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("file:///C:/Users/kyn/Downloads/premium_photo-1667761637876-e704c906927d.jpg");
+  background-image: url("./assets/backgroundSecondary.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -217,7 +217,7 @@ body {
   rotate: 40px;
 }
 
-#Clock {
+#Petals2 {
   position: absolute;
   left: 0%;
   bottom: 50%;
