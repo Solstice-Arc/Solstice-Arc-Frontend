@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-image: url("file:///C:/Users/kyn/Downloads/premium_photo-1667761637876-e704c906927d.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+}
+
+.card img {
+  width: 180px;
+  height: 260px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.card.active img {
+  transform: scale(1.5);
+}
+
+.action-buttons {
+  display: none;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.card.active .action-buttons {
+  display: flex;
+}
+
+.select-button,
+.sell-button {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sell-button:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+#selected-cards-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  width: 90%;
+}
+
+.selected-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.selected-card img {
+  width: 90px;
+  height: 130px;
+  border-radius: 5px;
+}
+
+.selected-card p {
+  background-color: #333333cd;
+  padding: 0.2rem 1rem;
+  color: #eee;
+}
+
+#message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+#top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: #333333cd;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#Avatar {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#username {
+  font-size: 2rem;
+  color: #eee;
+  font-family: "MedievalSharp", serif;
+  font-weight: 700;
+}
+
+#side-bar {
+  position: absolute;
+  left: 0;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: #333333cd;
+  width: 6.5rem;
+  height: 33rem;
+}
+
+#PlayButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#PlayButton:hover {
+  background-color: #111111cd;
+}
+
+#DeckButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#DeckButton:hover {
+  background-color: #111111cd;
+}
+
+#MarketplaceButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#MarketplaceButton:hover {
+  background-color: #111111cd;
+}
+
+#Tie {
+  position: absolute;
+  left: 80%;
+  bottom: 60%;
+  width: 25rem;
+  height: auto;
+  z-index: -5;
+  rotate: 40px;
+}
+
+#Clock {
+  position: absolute;
+  left: 0%;
+  bottom: 50%;
+  width: 25rem;
+  height: auto;
+  z-index: -5;
+}
+
+#Flower {
+  position: absolute;
+  left: 80%;
+  bottom: 5%;
+  width: 10rem;
+  height: auto;
+  z-index: -5;
+}
+
+#Gear {
+  position: absolute;
+  left: 65%;
+  bottom: 60%;
+  width: 25rem;
+  height: auto;
+  z-index: -10;
+  animation: rotate360 5s linear infinite;
+}
+
+#Wheel {
+  position: absolute;
+  left: -10%;
+  bottom: -30%;
+  width: 30rem;
+  height: auto;
+  z-index: -5;
+  animation: rotate360 6s linear infinite;
+}
+
+#Pearl {
+  position: absolute;
+  left: 35%;
+  bottom: 86%;
+  width: 35rem;
+  height: auto;
+  z-index: -35;
+}
+
+#Bebe {
+  position: absolute;
+  left: 30%;
+  bottom: -15%;
+  width: 35rem;
+  height: auto;
+  z-index: -25;
+  animation: sway 4s infinite ease-in-out;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

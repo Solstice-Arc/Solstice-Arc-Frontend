@@ -42,6 +42,9 @@ body {
 }
 
 #side-bar {
+  position: absolute;
+  left: 0;
+  top: 4rem;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -50,6 +53,7 @@ body {
   background-color: #333333cd;
   width: 6.5rem;
   height: 33rem;
+  z-index: 6;
 }
 
 #PlayButton {
@@ -136,7 +140,7 @@ body {
   border-radius: 5px;
 }
 
-#inci {
+#pearls {
   position: absolute;
   left: 90%;
   bottom: 5%;
@@ -193,42 +197,4 @@ body {
   width: 7rem; /* Cadı resmi genişliği */
   height: auto;
   z-index: 5; /* Görünümde üstte olmasını sağlamak */
-}
-
-#PlayButton {
-  width: 75px;
-  cursor: pointer;
-}
-#PlayButton:hover {
-  background-color: #111111cd;
-}
-#Kart {
-  width: 90px;
-  cursor: pointer;
-}
-
-#Kart:hover {
-  background-color: #111111cd;
-}
-
-#market {
-  width: 90px;
-  cursor: pointer;
-}
-
-#market:hover {
-  background-color: #111111cd;
-}
-
-#side-bar {
-  position: absolute;
-  z-index: 6;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: first baseline;
-  gap: 3rem;
-  background-color: #333333cd;
-  width: 6.5rem;
-  height: 33rem;
 }
