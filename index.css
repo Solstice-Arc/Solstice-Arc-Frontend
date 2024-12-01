@@ -1,0 +1,126 @@
+* {
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("file:///C:/Users/kyn/Downloads/dsadsadsadsadsa.jpg"); /* Arka plan resmi */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: #333333cd;
+  padding: 0.5rem;
+}
+
+#Avatar {
+  border-radius: 100%;
+  width: 50px; /* Profil fotoğrafı genişliği */
+  height: 50px; /* Profil fotoğrafı yüksekliği */
+  border-radius: 50%; /* Daire görünümü */
+  background-color: blue; /* Örnek renk, profil fotoğrafı burada bir renk ya da resim olabilir */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#username {
+  font-size: 2rem; /* Yazı boyutu */
+  color: #eee; /* Yazı rengi */
+  font-family: "MedievalSharp", serif;
+  font-weight: 700;
+}
+
+#side-bar {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: #333333cd;
+  width: 6.5rem;
+  height: 33rem;
+}
+
+#PlayButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#PlayButton:hover {
+  background-color: #111111cd;
+}
+
+#DeckButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#DeckButton:hover {
+  background-color: #111111cd;
+}
+
+#MarketplaceButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#MarketplaceButton:hover {
+  background-color: #111111cd;
+}
+
+#witch {
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
+  width: 25rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: 5; /* Görünümde üstte olmasını sağlamak */
+  animation: sway 2s infinite ease-in-out; /* Animasyonu cadıya uygula */
+}
+
+#flower {
+  position: absolute;
+  left: 40%;
+  bottom: 0%;
+  width: 40rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: 6; /* Görünümde üstte olmasını sağlamak */
+}
+
+#sun {
+  position: absolute;
+  top: 6%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  height: 250px; /* Yükseklik */
+  animation: rotate360 2s linear infinite; /* Sürekli dönen animasyon */
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

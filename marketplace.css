@@ -1,0 +1,234 @@
+* {
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("file:///C:/Users/kyn/Downloads/premium_photo-1667761637876-e704c906927d.jpg"); /* Arka plan resmi */
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  height: 100vh; /* Sayfanın yüksekliğini tam yap */
+  display: flex;
+  flex-direction: column;
+}
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: #333333cd;
+  padding: 0.5rem;
+}
+
+#Avatar {
+  border-radius: 100%;
+  width: 50px; /* Profil fotoğrafı genişliği */
+  height: 50px; /* Profil fotoğrafı yüksekliği */
+  border-radius: 50%; /* Daire görünümü */
+  background-color: blue; /* Örnek renk, profil fotoğrafı burada bir renk ya da resim olabilir */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#username {
+  font-size: 2rem; /* Yazı boyutu */
+  color: #eee; /* Yazı rengi */
+  font-family: "MedievalSharp", serif;
+  font-weight: 700;
+}
+
+#side-bar {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: #333333cd;
+  width: 6.5rem;
+  height: 33rem;
+}
+
+#PlayButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#PlayButton:hover {
+  background-color: #111111cd;
+}
+
+#DeckButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#DeckButton:hover {
+  background-color: #111111cd;
+}
+
+#MarketplaceButton {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+#MarketplaceButton:hover {
+  background-color: #111111cd;
+}
+
+#witch {
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
+  width: 25rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: 5; /* Görünümde üstte olmasını sağlamak */
+  animation: sway 2s infinite ease-in-out; /* Animasyonu cadıya uygula */
+}
+
+#flower {
+  position: absolute;
+  left: 40%;
+  bottom: 0%;
+  width: 40rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: 6; /* Görünümde üstte olmasını sağlamak */
+}
+
+#sun {
+  position: absolute;
+  top: 6%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  height: 250px; /* Yükseklik */
+  animation: rotate360 2s linear infinite; /* Sürekli dönen animasyon */
+}
+/* Ürünler için container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap; /* Ürünlerin alt satıra geçmesini sağlar */
+  justify-content: center; /* Ürünleri sayfanın ortasına yerleştirir */
+  margin-top: 50px; /* Sayfanın üst kısmında biraz boşluk bırakır */
+}
+
+/* Ürün için stil */
+.product {
+  width: 150px; /* Ürün resminin genişliği */
+  margin: 10px; /* Ürünler arasında boşluk */
+  text-align: center; /* Resmin altındaki metni ortalar */
+}
+
+.product-image {
+  width: 100%; /* Resmin genişliği ürün kutusuna uyar */
+  height: auto;
+  border-radius: 10px; /* Köşeleri yuvarlatır */
+}
+
+.price {
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6); /* Fiyat yazısının arka planı */
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#inci {
+  position: absolute;
+  left: 90%;
+  bottom: 5%;
+  width: 11rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: 5; /* Görünümde üstte olmasını sağlamak */
+}
+
+#paper {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 31rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: 5; /* Görünümde üstte olmasını sağlamak */
+}
+
+#witch {
+  position: absolute;
+  left: 50%;
+  bottom: -5%;
+  width: 31rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: -1; /* Görünümde üstte olmasını sağlamak */
+  animation: sway 4s infinite ease-in-out; /* Animasyonu cadıya uygula */
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+#star {
+  position: absolute;
+  left: 10%;
+  bottom: 70%;
+  width: 11rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: -1; /* Görünümde üstte olmasını sağlamak */
+  animation: sway 4s infinite ease-in-out; /* Animasyonu cadıya uygula */
+}
+
+#seal {
+  position: absolute;
+  left: 15%;
+  bottom: 25%;
+  width: 7rem; /* Cadı resmi genişliği */
+  height: auto;
+  z-index: 5; /* Görünümde üstte olmasını sağlamak */
+}
+
+#PlayButton {
+  width: 75px;
+  cursor: pointer;
+}
+#PlayButton:hover {
+  background-color: #111111cd;
+}
+#Kart {
+  width: 90px;
+  cursor: pointer;
+}
+
+#Kart:hover {
+  background-color: #111111cd;
+}
+
+#market {
+  width: 90px;
+  cursor: pointer;
+}
+
+#market:hover {
+  background-color: #111111cd;
+}
+
+#side-bar {
+  position: absolute;
+  z-index: 6;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  gap: 3rem;
+  background-color: #333333cd;
+  width: 6.5rem;
+  height: 33rem;
+}
